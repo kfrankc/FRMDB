@@ -1,5 +1,5 @@
 #navbar {
-text-align:center;
+	text-align:center;
 	position: fixed;
 	width: 100%;
 	height: 100px;
@@ -14,4 +14,33 @@ text-align:center;
 #FRMDB-logo{
     padding: 10px;
     height: 80px;
+}
+
+#content{
+	margin-top: 150px;
+	position: center;
+}
+
+#title{
+	font-family: Lato;
+	font-size: 30pt;
+	margin: 5px;
+	margin-bottom: 15px;
+	text-align: center;
+	font-weight: lighter;
+}
+
+#fruthie-logo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	max-width: 300px;
+	max-height: 400px;
+}
+
+#title-caption{
+	text-align: center;
+	font-family: Lato;
+	padding-top: 5px;
 }
