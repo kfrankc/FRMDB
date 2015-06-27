@@ -2,7 +2,7 @@
 	text-align:center;
 	position: fixed;
 	width: 100%;
-	height: 100px;
+	height: 60px;
 	top: 0;
 	left: 0;
 	z-index: 2;
@@ -13,13 +13,15 @@
 
 #FRMDB-logo{
     padding: 10px;
-    height: 80px;
+    height: 60px;
 }
 
+
 #content{
-	margin-top: 150px;
+	margin-top: 100px;
 	position: center;
 }
+
 
 #title{
 	font-family: Lato;
@@ -31,9 +33,7 @@
 }
 
 #fruthie-logo{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	position:center; 
 	padding-top: 10px;
 	max-width: 300px;
 	max-height: 400px;
@@ -44,3 +44,27 @@
 	font-family: Lato;
 	padding-top: 5px;
 }
+/*
+body{
+	background-image: url("https://scontent.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/11031129_10200541805905391_4598427563623078975_n.jpg?oh=07181d0f1d17f0d96d7294f47fe3bd57&oe=5627A449");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	
+}
+*/
+
+img.main{
+	width: 100%;
+	height: auto;
+	position: center;
+	marigin-right: auto;
+	marigin-left: auto;
+}
+
+#navbar2{
+	height: 30px; 
+}
+
+
+
