@@ -12,10 +12,12 @@
 }
 
 #FRMDB-logo{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
     padding: 10px;
-    height: 60px;
+    height: 50px;
 }
-
 
 #content {
 	margin-top: 90px;
@@ -56,7 +58,6 @@
 	font-weight: bold;
 	margin: 5px;
 	margin-bottom: 15px;
-}
 
 .card-img {
     position: relative;
@@ -117,22 +118,12 @@
 	font-family: Lato;
 	padding-top: 5px;
 }
-/*
-body{
-	background-image: url("https://scontent.xx.fbcdn.net/hphotos-xpf1/v/t1.0-9/11031129_10200541805905391_4598427563623078975_n.jpg?oh=07181d0f1d17f0d96d7294f47fe3bd57&oe=5627A449");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	
-}
-*/
 
 img.main{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
 	width: 100%;
-	height: auto;
-	position: center;
-	marigin-right: auto;
-	marigin-left: auto;
 }
 
 #navbar2{
@@ -140,12 +131,136 @@ img.main{
 }
 
 img.Frank{
-	width: 100%;
+	position: absolute;
+	right: 0px; 
+	width: 25%;
 }
 
 img.Ruthie{
-	width:100%;
+	position: absolute;
+	left: 0px;
+	width: 25%;
 }
 
 
+img.About_Icon{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 25px;
+	width: 5%
+}
 
+h3.About_Frank{
+	font-family: 'Lato', sans-serif;
+	/*color: #22313F;*/
+	color:#6C7A89;
+	padding-top: 10px;
+	padding-left: 15px;
+}
+
+h3.About_Ruthie{
+	font-family: 'Lato', sans-serif;
+	/*color: #22313F;*/
+	color:#6C7A89;
+	position: absolute;
+	right: 0px;
+	padding-right:150px;
+	padding-left: 15px;
+}
+
+h3.About_FRMDB{
+	font-family: 'Lato', sans-serif;
+	/*color: #22313F;*/
+	color:#6C7A89;
+}
+
+
+#About_Title{
+	text-align: center;
+	padding-top: 5px;
+}
+
+
+#Bio_Frank{
+	padding-top: 20px;
+	padding-right: 350px;
+	padding-left: 15px;
+	padding-bottom: 110px;
+}
+
+#Bio_Ruthie{
+	padding-top: 75px;
+	padding-left: 350px;
+	padding-right: 15px;
+	padding-bottom: 55px;
+}
+
+#Bio_FRMDB{
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+p2{
+	font-family: 'Lato', sans-serif;
+	color: #95A5A6;
+	font-size: 130%;
+}
+
+#About1{
+	background-color: #F2F1EF;
+}
+
+#About2{
+	/*background-color: #F2F1EF;*/
+}
+
+#nav{
+    height:45px;
+    border-bottom:1px solid #ddd;
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    background:pink url(../images/nav.png) repeat-x center left;
+}
+
+/*
+#nav ul{
+    height:25px;
+    list-style:none;
+    margin:6px auto 0px auto;
+    width:600px;   
+}*/
+
+#nav ul li{
+    display:inline;
+    float:left;
+    margin:0px 2px;
+}
+
+#nav a{
+    font-size:16px;
+    font-weight:bold;
+ /*   float:left;*/
+    padding: 2px 4px;
+    font-family: 'Lato', sans-serif;
+	color:#6C7A89;
+    text-decoration: none;
+   /* border:1px solid #ccc;*/
+    cursor: pointer;
+    background:transparent url(../images/overlay.png) repeat-x center left;
+    height:16px;
+    line-height:16px;
+}
+#nav a:hover{
+    background:#D9D9DA none;
+    color: #fff;
+}
+
+#nav ul li.search{
+    float:right;
+}
