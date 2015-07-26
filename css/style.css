@@ -1,14 +1,20 @@
 #navbar {
 	text-align:center;
-	position: fixed;
+	position: relative;
 	width: 100%;
-	height: 60px;
+	min-height: 400px;
 	top: 0;
 	left: 0;
-	z-index: 2;
-	background: pink;
     border-bottom-style: none;
     border-bottom-width: 1px;
+    z-index: 10;
+}
+
+#navbar-img{
+	position:absolute;
+	width:100%;
+	top:0;
+	left:0;
 }
 
 #FRMDB-logo{
@@ -20,20 +26,37 @@
 }
 
 #content {
-	margin-top: 90px;
 	padding-left: 20px;
+
 }
 
 #content-credit {
-	position:fixed;
+	clear:both;
+	position:relative;
+	z-index:10;
 	height:22px;
     left:0px;
     right:0px;
     bottom:0px;
 	text-align: center;
-	padding-bottom: 20px;
 	font-weight: 300;
 	font-family: Lato, Arial, sans-serif;
+}
+
+.card-intro {
+	position: relative;
+	float:left;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	min-height: 530px;
+	min-width: 340px;
+	max-height: 530px;
+	max-width: 340px;
+	width: 32%;
+	height: 100%;
+	padding: 15px;
+	background: #bfbfbf;
+	pointer-events: auto;
 }
 
 .card {
@@ -41,23 +64,59 @@
 	float:left;
 	margin-bottom: 20px;
 	margin-right: 20px;
-	min-height: 510px;
+	min-height: 530px;
 	min-width: 340px;
-	max-height: 510px;
+	max-height: 530px;
 	max-width: 340px;
 	width: 32%;
 	height: 100%;
 	padding: 15px;
-	background: pink;
+	background: #bfbfbf;
 	pointer-events: auto;
 }
 
-.card-title {
-	font-family: Roboto;
-	font-size: 20pt;
-	font-weight: bold;
+
+.card-movie-title {
+	font-family: 'Lobster', cursive;
+	font-size: 30pt;
+	font-weight: thin;
 	margin: 5px;
+	text-align: center;
 	margin-bottom: 15px;
+}
+
+.card-title {
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 25pt;
+	font-weight: thin;
+	margin-left: 15px;
+	margin-bottom: 11px;
+}
+
+#card-movie-img{
+	width: 80px;
+	height: 80px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.card-movie-content{
+	font-family: Lato;
+	font-size: 13pt;
+	font-weight: thin;
+	padding-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+}
+
+#card-movie-ranking{
+	height:180px;
+	width: 350px;
+	padding-top: 10px;
+	padding-left: 10px; 
 }
 
 .card-img {
@@ -75,27 +134,82 @@
     left: 0;
     width: 100%;
     height: 400px;
-    padding-left: 20px;
+    padding-left: 30px;
+    z-index: 2;
 }
 
 .card-frank {
-    font-family: Roboto;
-    font-size: 12pt;
-    font-weight: bold;
-    margin: 5px;
-    margin-bottom: 15px;
-    margin-top: 170px;
+    font-family: Lato;
+    font-size: 15pt;
+    font-weight: thin;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    margin-top: 210px;
     text-align: justify;
+    float:left;
+    height:61px;
+    width: 80px;
+    background-color: #c5eff7;
+    padding-right: 145px;
 }
 
 .card-ruthie {
-    font-family: Roboto;
-    font-size: 12pt;
-    font-weight: bold;
-    margin: 5px;
-    margin-bottom: 15px;
-    margin-top: 15px;
+    font-family: Lato;
+    font-size: 15pt;
+    font-weight: thin;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-top: 210px;
     text-align: justify;
+    float:left;
+    background-color: #e2f7fb;
+    height: 61px;
+    width: 135px;
+    padding-right: 50px;
+    z-index: 1;
+}
+
+.frank-thumb{
+	width:55px;
+	height:60px;
+	border-radius:100%;
+	z-index:3;
+	position:relative;
+	bottom:80px;
+	left:20px;
+	border:5px solid #c5eff7;
+}
+
+.ruthie-thumb{
+	width:60px;
+	height:60px;
+	border-radius:100%;
+	z-index:3;
+	float:right;	
+	position:relative;
+	bottom:80px;
+	right:20px;	
+	border:5px solid #e2f7fb;
+}
+
+#frank-rank{
+    font-family: 'Oswald', sans-serif;
+    font-size: 28pt;
+    text-align: center;
+    font-weight: thin;
+    position:relative;
+    left:80px;
+    top:2px;
+    
+}
+
+#ruthie-rank{
+    font-family: 'Oswald', sans-serif;
+    font-size: 28pt;
+    font-weight: thin;
+    position:relative;
+    left:20px;
+    top:2px;
 }
 
 #title{

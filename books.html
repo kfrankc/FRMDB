@@ -1,10 +1,14 @@
+
 <html>
 <head>
 	<title>FRMDB - Fruthie Movie DataBase </title>
 	<meta name="viewport" content="user-scalable=no" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-	<!-- <link rel="shortcut icon" type="image/png" href="favicon.png" /> --> 
+	<!-- google fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'> 
+	<!-- <link rel="shortcut icon" type="image/png" href="favicon.png" /> -->
 
 	<!--ADDED BOOTSTRAP-->
 	
@@ -19,27 +23,42 @@
 
 	<!-- More JS libraries for template and spreadsheet API -->
 	<script src="js/handlebars-v3.0.3.js"></script>
-	<script src="js/dataloader.js"></script>
+	<script src="js/dataloader_books.js"></script>
 
 </head>
 <body>
-	
+	<!-- navbar found in style.css -->
 	<div id="navbar">
-		<img src="http://kfrankc.me/wp-content/uploads/2015/06/FRMDB-banner.png" id="FRMDB-logo">
-	
-	
-	<!-- NAVBAR -->
-	<nav class = "navbar navbar-default navbar-sttic-top">
-	<ul class = "nav nav-pills">
-		<li role = "presentation"><a href = "index.html">Home</a></li>
-		<li role = "presentation"><a href = "movies.html">Movies</a></li>
-		<li role = "presentation"><a href = "books.html">Books</a></li>
-	</ul>
-	</nav>
+		<img src = "https://frmdb.files.wordpress.com/2015/07/books_covoer.png" id = "navbar-img">
 	</div>
-	
-	<h2>Books coming soon!</h2>
-	
+	<div id = "content">
+		<div class="card-intro">
+			<p class = "card-movie-title"> Books </p>
+			<img src="https://frmdb.files.wordpress.com/2015/07/vintage_cinema_camera_256.png" id="card-movie-img">
+			<p class = "card-movie-content">Welcome to the  <i>Books</i> page! <br>Each book has a rating from both Frank & Ruthie, ranging from 1-10. The meaning of each rating is detailed below:</p>
+			<img src="https://frmdb.files.wordpress.com/2015/07/frmdb-movie-ranking1.png" id="card-movie-ranking">
+		</div>
+		<script id="card-template" type="text/x-handlebars-template">
+			{{#each apidata}}
+			<div class="card" id="card-{{@index}}">
+				<p class="card-title">{{title}}</p>
+				<div class="card-img">
+					<a href = "{{goodreadslink}}" target="_blank">
+					<img class="card-img-embed" height="315" src="{{photolink}}">
+					</a>
+				</div>
+
+				<div class="card-frank"><p id = "frank-rank">{{frank}}</p></div>
+				<div class="card-ruthie"><p id = "ruthie-rank">{{ruthie}}</p></div>
+				<img class = "frank-thumb" src="https://frmdb.files.wordpress.com/2015/07/frank_thumb.png"></img>
+				<img class = "ruthie-thumb" src="https://frmdb.files.wordpress.com/2015/07/ruthie_thumb.png"></img>
+			</div>
+			{{/each}}
+		</script>
+
+
+	</div>
+
 	<div id="content-credit">
             Page created by <a href="mailto:frankchen1698@gmail.com">Frank Chen</a> &amp; <a href="mailto:ruthjohnson2013@gmail.com">Ruthie Johnson</a>
             &copy; 2015 FRMDB
