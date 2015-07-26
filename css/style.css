@@ -1,3 +1,5 @@
+
+/* NAVIGATION BAR */
 #navbar {
 	text-align:center;
 	position: fixed;
@@ -6,15 +8,60 @@
 	top: 0;
 	left: 0;
 	z-index: 2;
-	background: pink;
+	background: #000000;
     border-bottom-style: none;
     border-bottom-width: 1px;
 }
 
+#nav{
+    height:45px;
+    /*border-bottom:1px solid #ddd;*/
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    background:#4D505B url(../images/nav.png) repeat-x center left;
+}
+
+/*
+#nav ul{
+    height:25px;
+    list-style:none;
+    margin:6px auto 0px auto;
+    width:600px;   
+}*/
+
+#nav ul li{
+    display:inline;
+    float:left;
+    margin:0px 2px;
+}
+
+#nav a{
+    font-size:16px;
+   /* font-weight:bold;*/
+ /*   float:left;*/
+    padding-top: 10px;
+    font-family: 'Lato', sans-serif;
+	color:#ECECEC;
+    text-decoration: none;
+   /* border:1px solid #ccc;*/
+    cursor: pointer;
+    background:transparent url(../images/overlay.png) repeat-x center left;
+    height:45px;
+    line-height:16px;
+}
+#nav a:hover{
+	padding-top: 10px;
+    background:#92DCE0 none;
+    color: #fff;
+}
+
+#nav ul li.search{
+    float:right;
+}
+
 #FRMDB-logo{
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
     padding: 10px;
     height: 50px;
 }
@@ -24,8 +71,15 @@
 	padding-left: 20px;
 }
 
+#Heading{
+	position: center;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 #content-credit {
-	position:fixed;
+	position:relative;
 	height:22px;
     left:0px;
     right:0px;
@@ -35,7 +89,360 @@
 	font-weight: 300;
 	font-family: Lato, Arial, sans-serif;
 }
+/*
+#title{
+	font-family: Lato;
+	font-size: 30pt;
+	margin: 5px;
+	margin-bottom: 15px;
+	text-align: center;
+	font-weight: lighter;
+}
+*/
+/*
+#fruthie-logo{
+	position:center; 
+	padding-top: 10px;
+	max-width: 300px;
+	max-height: 400px;
+}
+*/
+/*
+#title-caption{
+	text-align: center;
+	font-family: Lato;
+	padding-top: 5px;
+}
+*/
+/*
+img.FRMDB_logo{
+	padding-top: 350px;
+	padding-left: 75px;
+}
+*/
+img.main{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+	width: 100%;
+}
 
+/*
+#navbar2{
+	height: 30px; 
+}
+*/
+/* END NAVIGATON BAR */
+
+img.About_header{
+	width: 100%;
+	height: auto;
+	position: relative; 
+	padding-bottom: 75px;
+}
+
+img.Doge_banner{
+	width: 100%;
+	height: auto;
+	position: relative; 
+	padding-bottom: 75px;
+	padding-top: 75px;
+}
+
+img.Doge_footer{
+	position: relative; 
+	width: 100%;
+	height: auto;
+	position: relative; 
+	padding-top: 75px;	
+}
+
+img.Frank{
+	position: absolute;
+	padding-top: 15px;
+	right: 175px; 
+	padding-left: 15px;
+	width: 23%;
+}
+
+img.Ruthie{
+	position: absolute;
+	padding-top: 15px;
+	padding-left: 15px;
+	right: 175px; 
+	width: 23%;
+}
+
+img.cover_title{
+	padding-top: 200px;
+	width: 500px;
+	height: 500px;
+}
+
+img.About_Icon{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 15px;
+	width: 5%
+}
+
+img.About_title{
+	position: absolute;
+	z-index: 10;
+	/*margin-top: 80px;*/
+}
+
+img.Facebook{
+	padding-left: 4px;
+	padding-right: 4px;
+	width: 4%;
+}
+
+h2.About_header span{
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,0.7);
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	padding-right: 30px;
+	
+}
+
+h2.Doge_footer span{
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,0.7);
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 140px;
+	padding-right: 20px;
+}
+
+h2.Doge_footer{
+	position: absolute;
+	top: 2500px;
+	bottom: 150px;
+	/*padding-left: 75px;*/
+	width:100%;
+		font-family: 'Lato', sans-serif;
+	/*color: #22313F;*/
+	color:white;
+	font-size: 200%;
+}
+
+
+h2.About_header{
+	position: absolute;
+	top: 100px;
+	bottom: 150px;
+	/*padding-left: 75px;*/
+	width:100%;
+		font-family: 'Lato', sans-serif;
+	/*color: #22313F;*/
+	color:white;
+	font-size: 550%;
+}
+
+/* ABOUT SECTION */
+#About_section{
+	position: absolute;
+	z-index: 10px;
+	background-color: #000000;
+	width: 175px;
+	margin-top: 75px;
+	padding-left: 15px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+h3.About_Frank{
+	font-family: 'Lato', sans-serif;
+	/*color: #22313F;*/
+	color:#757D75;
+	font-size: 185%;
+	padding-left: 15px;
+}
+
+h3.About_Ruthie{
+	font-family: 'Lato', sans-serif;
+	/*color: #22313F;*/
+	color:#757D75;
+	font-size: 185%;
+	padding-left: 15px;
+}
+
+h3.About_FRMDB{
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	padding-top: 10px;	
+	font-size: 185%;
+	color:#6C7A89;
+
+}
+
+#logo{
+	position: relative;
+	color: #ffffff;
+
+}
+
+h1.logo{
+	margin-left: 0px;
+	font-family: 'Lato', sans-serif;
+	font-size: 900%;
+}
+
+h2.logo{
+	margin-left: 0px;
+	font-family: 'Lato', sans-serif;
+	font-size: 700%;
+}
+
+#About_Title{
+	text-align: center;
+}
+
+
+#Bio_Frank{
+	padding-top: 10px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	padding-right: 150px;
+}
+
+#Bio_Ruthie{
+	padding-top: 10px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	padding-right: 150px;
+}
+
+#About_Us{
+	padding-top: 50px;
+	padding-left: 200px;
+	padding-right: 200px;
+	text-align: center;
+}
+
+p2.About_Us{
+	font-family: 'Lato', sans-serif;
+	padding-top: 20px;
+	color:#6C7A89;
+	line-height: 200%;
+
+}
+
+#Bio_FRMDB{
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	padding-left: 155px;
+	padding-right: 155px;
+}
+
+img.Doge{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 15px;
+	width: 20%
+}
+
+p.caption{
+	text-align: center;
+	color:#6C7A89;
+	padding-top: 5px;
+	padding-bottom: 15px;
+}
+
+p2.double{
+	line-height: 200%;
+}
+
+p2{
+	font-family: 'Lato', sans-serif;
+	/*color: #ECECEC;*/
+	color: #707070;
+	font-size: 115%;
+	line-height: 200%;
+}
+
+#About1{ /* ABOUT FRANK */
+
+	display: block;
+	margin-left: 10%;
+
+	margin-top: 50px;	
+	width:60%;
+
+	/*background-color: #000000;*/
+}
+
+#About2{ /* ABOUT RUTHIE */
+	
+	display: block;
+	margin-left: 10%;
+
+	margin-top: 50px;	
+	width:60%;
+	padding-bottom: 75px;
+
+	/*background-color: #000000;*/
+}
+
+/* END ABOUT SECTION */
+
+
+/* NAVIGATION GRID (SLIDE 3) */
+
+#img_a{
+	position: relative;
+	padding-top: 7px;
+	padding-bottom: 7px;
+
+
+}
+
+#img_b{
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: -10px;
+	
+}
+
+
+#text1{
+	z-index: 100;
+	position: absolute;
+	color: #000000;
+	padding-top: 10px;
+	padding-left: 7px;
+	font-size: 30px;
+	 font-family: 'Lato', sans-serif;
+}
+
+#text2{
+	z-index: 100;
+	position: absolute;
+	color: #000000;
+	padding-top: 35px;
+	padding-right: 30px;
+	padding-left: 20px;
+	font-size: 20px;
+	 font-family: 'Lato', sans-serif;
+}
+
+
+
+/* ABOUT SECTION/ FUN FACTS */
+#row{
+	width: 800px;
+}
+
+}
+/* END FUN FACTS */
+
+/* MOVIE AND BOOKS CARDS */
 .card {
 	position: relative;
 	float:left;
@@ -97,171 +504,4 @@
     margin-top: 15px;
     text-align: justify;
 }
-
-#title{
-	font-family: Lato;
-	font-size: 30pt;
-	margin: 5px;
-	margin-bottom: 15px;
-	text-align: center;
-	font-weight: lighter;
-}
-
-#fruthie-logo{
-	position:center; 
-	padding-top: 10px;
-	max-width: 300px;
-	max-height: 400px;
-}
-
-#title-caption{
-	text-align: center;
-	font-family: Lato;
-	padding-top: 5px;
-}
-
-img.main{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;	
-	width: 100%;
-}
-
-#navbar2{
-	height: 30px; 
-}
-
-img.Frank{
-	position: absolute;
-	right: 0px; 
-	width: 25%;
-}
-
-img.Ruthie{
-	position: absolute;
-	left: 0px;
-	width: 25%;
-}
-
-
-img.About_Icon{
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	padding-top: 25px;
-	width: 5%
-}
-
-h3.About_Frank{
-	font-family: 'Lato', sans-serif;
-	/*color: #22313F;*/
-	color:#6C7A89;
-	padding-top: 10px;
-	padding-left: 15px;
-}
-
-h3.About_Ruthie{
-	font-family: 'Lato', sans-serif;
-	/*color: #22313F;*/
-	color:#6C7A89;
-	position: absolute;
-	right: 0px;
-	padding-right:150px;
-	padding-left: 15px;
-}
-
-h3.About_FRMDB{
-	font-family: 'Lato', sans-serif;
-	/*color: #22313F;*/
-	color:#6C7A89;
-}
-
-
-#About_Title{
-	text-align: center;
-	padding-top: 5px;
-}
-
-
-#Bio_Frank{
-	padding-top: 20px;
-	padding-right: 350px;
-	padding-left: 15px;
-	padding-bottom: 110px;
-}
-
-#Bio_Ruthie{
-	padding-top: 75px;
-	padding-left: 350px;
-	padding-right: 15px;
-	padding-bottom: 55px;
-}
-
-#Bio_FRMDB{
-	text-align: center;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-left: 15px;
-	padding-right: 15px;
-}
-
-p2{
-	font-family: 'Lato', sans-serif;
-	color: #95A5A6;
-	font-size: 130%;
-}
-
-#About1{
-	background-color: #F2F1EF;
-}
-
-#About2{
-	/*background-color: #F2F1EF;*/
-}
-
-#nav{
-    height:45px;
-    border-bottom:1px solid #ddd;
-    position:fixed;
-    top:0px;
-    left:0px;
-    right:0px;
-    background:pink url(../images/nav.png) repeat-x center left;
-}
-
-/*
-#nav ul{
-    height:25px;
-    list-style:none;
-    margin:6px auto 0px auto;
-    width:600px;   
-}*/
-
-#nav ul li{
-    display:inline;
-    float:left;
-    margin:0px 2px;
-}
-
-#nav a{
-    font-size:16px;
-    font-weight:bold;
- /*   float:left;*/
-    padding: 2px 4px;
-    font-family: 'Lato', sans-serif;
-	color:#6C7A89;
-    text-decoration: none;
-   /* border:1px solid #ccc;*/
-    cursor: pointer;
-    background:transparent url(../images/overlay.png) repeat-x center left;
-    height:16px;
-    line-height:16px;
-}
-#nav a:hover{
-    background:#D9D9DA none;
-    color: #fff;
-}
-
-#nav ul li.search{
-    float:right;
-}
+ /* END MOVIES AND BOOKS CARDS*/

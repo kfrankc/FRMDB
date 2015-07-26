@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FRMDB - Fruthie Movie DataBase </title>
+	<meta name="viewport" content="user-scalable=no" />
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href= "style-index.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<!-- <link rel="shortcut icon" type="image/png" href="favicon.png" /> --> 
+	<!-- angular.js -->
+    <script src="js/angular.js"></script>
+    <script src="js/HoW.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+    
+    <!--ADDED BOOTSTRAP-->
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<!-- JQuery -->
+	<script src = "js/jquery-2.1.3.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<!-- More JS libraries for template and spreadsheet API -->
+	<script src="js/handlebars-v3.0.3.js"></script>
+	<script src="js/dataloader.js"></script>
+
+</head>
+<body>
+   <style>
+        body{
+            margin:0px;
+            padding:0px;           
+            font-family:Arial;
+			 background:#EFF7FF url(fixedmenu.png) no-repeat top center;
+        }
+		a.back{
+            width:256px;
+            height:73px;
+            position:fixed;
+            bottom:15px;
+            right:15px;
+            background:transparent url(codrops_back.png) no-repeat top left;
+        }
+        .scroll{
+            width:133px;
+            height:61px;
+            position:fixed;
+            bottom:15px;
+            left:20px;
+            background:transparent url(scroll.png) no-repeat top left;
+        }
+        .info{
+            text-align:right;
+        }
+		.desc{
+			height:90px;
+			width:100%;
+			position:absolute;
+			top:1000px;
+			left:0px;
+			background:transparent url(hover.png) no-repeat center center;
+		}
+		#top{
+			top:0px;
+			left:0px;
+			position:absolute;
+			width:100%;
+			height:10px;
+		}
+		#bottom{
+			top:1500px;
+			left:0px;
+			position:absolute;
+			width:100%;
+			height:90px;
+			background:transparent url(end.png) no-repeat center center;
+		}
+    </style>
+        <div id="nav">
+        	 <img src="http://kfrankc.me/wp-content/uploads/2015/06/FRMDB-banner.png" id="FRMDB-logo">
+            <ul>
+                <li><a href = "index.html">HOME</a></li>
+                <li><a href = "movies.html">MOVIES</a></li>
+                <li><a href = "books.html">BOOKS</a></li>
+                <li><a href = "about.html">ABOUT</a></li>
+            </ul>
+        </div>              
+        <script type="text/javascript">
+            $(function() {
+                $(window).scroll(function(){
+					var scrollTop = $(window).scrollTop();
+					if(scrollTop != 0)
+						$('#nav').stop().animate({'opacity':'0.0'},400);
+					else	
+						$('#nav').stop().animate({'opacity':'0.0'},400);
+				});
+				
+				$('#nav').hover(
+					function (e) {
+						var scrollTop = $(window).scrollTop();
+						if(scrollTop != 0){
+							$('#nav').stop().animate({'opacity':'1'},400);
+						}
+					},
+					function (e) {
+						var scrollTop = $(window).scrollTop();
+						if(scrollTop != 0){
+							$('#nav').stop().animate({'opacity':'0.0'},400);
+						}
+					}
+				);
+            });
+        </script>
+
+	
+<div class="About_header">
+
+     <img class = "About_header" src = "https://mail.google.com/mail/u/0/?ui=2&ik=0342cce76e&view=fimg&th=14ea54cbc4edf31c&attid=0.1&disp=inline&safe=1&attbid=ANGjdJ8mtCnYHz4izo5wc1xBhCI2e-AeHRJWI4G3hxqx-BaCUUnJ8mQE3yhGqHzGsh1WyFclo3jY3vHBfKRDFJCeYyQMmkx1qRg6otGZq2FDlN7SiMmgAg6bJarTbTk&ats=1437292383510&rm=14ea54cbc4edf31c&zw&sz=w1342-h523">
+  
+     <h2 class = "About_header"><span>About</span></h2>
+
+</div>
+
+	<div id= "About1">
+
+
+		
+		<!--<img class="About_Frank" src= "https://frmdb.files.wordpress.com/2015/06/about_frank_text3.png">-->
+			<img class ="Frank" src = "https://frmdb.files.wordpress.com/2015/07/about_frank.png" >
+		<h3 class="About_Frank">about FRANK</h3>
+
+		<div id="Bio_Frank">
+		<p2 > Frank Chen, also known as Frank Space, is a third-year engineer extraordinare majoring in Computer Science and Engineering. He is from Vancouver, Canada, but currently lives in Tracy, CA. In his spare time, he enjoys both planning and attending Hackathons, but also being Taylor Swift's #1 fan. He has been a loyal fan from the beginning, and his favorite song is Blank Space. He enjoys flying a drone named, Bay, and long boarding on his board, called Max. Utomost though, Frank loves everything Rom-Com, from Pride and Predjudice to The Fault in Our Stars, he is the person to see!</p2>
+
+		<p2> ______________________________________________________________________________</p2>
+
+	<div id = "social_media">
+		<a href = "https://www.facebook.com/kfrankc" ><img class = "Facebook" src = "https://frmdb.files.wordpress.com/2015/07/fb_1.png"></a>
+		<a href = "mailto:frankchen1698@gmail.com"><img class = "Facebook" src = "https://frmdb.files.wordpress.com/2015/07/email.png"></a>
+		<a href = "https://www.linkedin.com/in/kfrankc"><img class = "Facebook" src = "https://frmdb.files.wordpress.com/2015/07/linkedin1.png"></a>
+		</div>
+	</div>
+
+	</div>	
+
+	<div id = "About2">
+		<h3 class="About_Ruthie">about Ruthie</h3>
+		<!--<img class = "About_Ruthie" src = "https://frmdb.files.wordpress.com/2015/06/about_ruthie_text1.png">-->
+		<img class = "Ruthie" src="https://frmdb.files.wordpress.com/2015/07/about_ruthie.png"> 
+		<div id= "Bio_Ruthie">
+			<p2 > Ruthie Johnson, the sassier of the two, is currently in her third year at UCLA, studying Mathematics of Computation, which is a combination of math and computer science. When she is not busy writing 5-page long proofs of game theory or coding websites to help students find free stuff on Facebook, Ruthie can be found doing back-flips in UCLA’s botanical garden, showing off her awesome hat collection, or eating macaroni & cheese. She loves watching Rom-Coms, jamming out to T-Swift, reading John Green novels, making DIY arts & crafts, walking on sunset beaches, and having classes outside classrooms on a beautiful afternoon.<br></p2>
+
+		<p2> ________________________________________________________________________</p2>
+
+	<div id = "social_media">
+		<a href = "www.facebook.com/ruthie.johnson.50" ><img class = "Facebook" src = "https://frmdb.files.wordpress.com/2015/07/fb_1.png"></a>
+		<a href = "mailto:ruthjohnson2013@gmail.com"><img class = "Facebook" src = "https://frmdb.files.wordpress.com/2015/07/email.png"></a>
+		<a href = "www.linkedin.com/in/ruthjohnson13"><img class = "Facebook" src = "https://frmdb.files.wordpress.com/2015/07/linkedin1.png"></a>
+		</div>
+
+	</div>
+		</div>
+
+	</div>
+
+<div class="Doge_banner">
+
+     <img class = "About_header" src = "https://mail.google.com/mail/u/0/?ui=2&ik=0342cce76e&view=fimg&th=14ea82856e7c7467&attid=0.1&disp=inline&safe=1&attbid=ANGjdJ83_Ia_pp-WfYf4-tUlPnA73EyT99JDQFGNKjAzDoi3zeOBarVvRma8aCEwY_EiDi3aZO8Mjuqixry6bdWL6PtKzEud3A0nOFk1pzpu__TjhoqLCPNVhwdke08&ats=1437340312483&rm=14ea82856e7c7467&zw&sz=w1342-h523">
+
+</div>
+
+<div class = "About_grid">
+		<div class = "col-md-1">
+		</div>
+
+		<div class = "col-md-1">
+		</div>
+
+		<div class = "col-md-1">
+		</div>
+
+	<div class = "row">
+		<div class = "col-md-3 ">
+			 <img id = "img_a" src="https://frmdb.files.wordpress.com/2015/07/heart_sf.jpg"  style="width:323px;height:200px">
+     
+			<div class = "row">
+				<div class = "col-md-6">
+					 <img id = "img_a" src="https://frmdb.files.wordpress.com/2015/07/spotify1.png"  style="width:150px;height:150px">
+     
+				</div>
+
+				<div class = "col-md-6">
+					 <img id = "img_b" src="https://frmdb.files.wordpress.com/2015/07/taylor_swift_-_19891.png"  style="width:150px;height:150px">
+     
+				</div>
+			</div>
+
+			<div class = "row">
+				<div class = "col-md-6">
+					 <img id = "img_a" src="https://frmdb.files.wordpress.com/2015/07/pie1.png"  style="width:150px;height:150px">
+     
+				</div>
+
+				<div class = "col-md-6">
+					 <img id = "img_b" src="https://frmdb.files.wordpress.com/2015/07/angry_bird2.jpg"  style="width:150px;height:150px">
+     
+				</div>
+			</div>
+		</div>	
+	
+
+	<div class = "row">
+		<div class = "col-md-3 ">
+			 <img id = "img_a" src="https://frmdb.files.wordpress.com/2015/07/fruthie-e1437953115927.jpg"  style="width:323px;height:200px">
+     
+			<div class = "row">
+				<div class = "col-md-6">
+					 <img id = "img_a" src="https://lh3.googleusercontent.com/LbiT3RaXurcot1gNhZwzOeQ1rZOk-ouPqrgdLoJW-uI=s625-no"  style="width:150px;height:150px">
+     
+				</div>
+
+				<div class = "col-md-6">
+					 <img id = "img_b" src="https://s-media-cache-ak0.pinimg.com/236x/8a/db/08/8adb08a2231982baf4ebb9fdcf6aad7e.jpg"  style="width:150px;height:150px">
+     
+				</div>
+			</div>
+
+			<div class = "row">
+				<div class = "col-md-6">
+					 <img id = "img_a" src="https://scontent.xx.fbcdn.net/hphotos-xpt1/v/t1.0-9/11698702_10206021116240200_1502635841534452637_n.jpg?oh=476cf7f647e0c2094b7df030f1e5f3c3&oe=565A8BE5"  style="width:150px;height:150px">
+     
+				</div>
+
+				<div class = "col-md-6">
+					 <img id = "img_b" src="http://www.wvusports.com/content/images/Graphics/Logos/UCLA.png"  style="width:150px;height:150px">
+     
+				</div>
+			</div>
+		</div>
+	</div>	
+<!--
+		<div class = "col-md-3">
+			<div class = "row">
+			 <img id = "img_b" src="https://frmdb.files.wordpress.com/2015/07/pink_background.png"  style="width:290px;height:300px">
+     		</div>
+
+			<div class= "row">
+				 <img id = "img_a" src="https://frmdb.files.wordpress.com/2015/07/speech.png"  style="width:305px;height:200px">
+     
+			</div>
+		</div>
+
+	</div>
+-->
+<!--
+<div class="row">
+
+    <div class="col-md-4">
+     
+       
+        <img id = "img_a" src="https://frmdb.files.wordpress.com/2015/07/pink_background.png" style="width:450px;height:230px">
+     	       
+        <img id = "img_a" src="https://frmdb.files.wordpress.com/2015/07/pink_background.png" style="width:450px;height:230px">
+    </div>
+
+    
+ </div>
+   
+<div class="row">
+
+    <div class="col-md-2">
+     
+       
+        <img id = "img_a" src="https://frmdb.files.wordpress.com/2015/07/pink_background.png" style="width:200px;height:200px">
+     
+    </div>
+
+    <div class="col-md-2">
+      
+        <img id = "img_b" src="https://frmdb.files.wordpress.com/2015/07/hammer.png" style="width:200px;height:200px">
+      	
+    </div>
+
+ </div>
+
+
+ <div class = "row">   
+    <div class="col-md-2">
+      
+       
+        <img id = "img_a" src="https://frmdb.files.wordpress.com/2015/07/books.png"  style="width:200px;height:200px">
+     
+    </div>
+    <div class="col-md-2">
+      
+        
+        <img id = "img_b" src="https://frmdb.files.wordpress.com/2015/07/pink_background.png" style="width:200px;height:200px">
+      
+    </div>
+   
+
+ </div>
+
+-->
+
+<div id= "About_Us">
+		                      	<p2 class = "About_Us" > Ruthie Johnson, the sassier of the two, is currently in her third year at UCLA, studying Mathematics of Computation, which is a combination of math and computer science. When she is not busy writing 5-page long proofs of game theory or coding websites to help students find free stuff on Facebook, Ruthie can be found doing back-flips in UCLA’s botanical garden, showing off her awesome hat collection, or eating macaroni & cheese. She loves watching Rom-Coms, jamming out to T-Swift, reading John Green novels, making DIY arts & crafts, walking on sunset beaches, and having classes outside classrooms on a beautiful afternoon. </p2>
+		                    </div>
+
+<div class="Doge_footer">
+
+	
+     <img class = "Doge_footer" src = "https://frmdb.files.wordpress.com/2015/07/doge_footer.jpg">
+
+     <h2 class = "Doge_footer"> <span>Home Movies Books </span></h2>
+
+</div>
+
+
+	<div id="content-credit">
+                Page created by <a href="mailto:frankchen1698@gmail.com">Frank Chen</a> &amp; <a href="mailto:ruthjohnson2013@gmail.com">Ruthie Johnson</a>
+                &copy; 2015 FRMDB
+    </div>
+
+</body>
