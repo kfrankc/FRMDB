@@ -2,22 +2,15 @@
 /* NAVIGATION BAR */
 #navbar {
 	text-align:center;
-	position: relative;
+	position: fixed;
 	width: 100%;
-	min-height: 400px;
+	height:60px;
 	top: 0;
 	left: 0;
 	z-index: 2;
 	background: #000000;
     border-bottom-style: none;
     border-bottom-width: 1px;
-}
-
-#navbar-img{
-	position:absolute;
-	width:100%;
-	top:0;
-	left:0;
 }
 
 #nav{
@@ -74,8 +67,8 @@
 }
 
 #content {
+	margin-top:30px;
 	padding-left: 20px;
-
 }
 
 #Heading{
@@ -86,7 +79,21 @@
 }
 
 #content-credit {
+	position: relative;
+	height:22px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+	text-align: center;
+	padding-bottom:20px;
+	font-weight: 300;
+	font-family: Lato, Arial, sans-serif;
+}
+
+#spreadsheet_content_credit {
+	clear:both;
 	position:relative;
+	z-index:10;
 	height:22px;
     left:0px;
     right:0px;
@@ -94,6 +101,13 @@
 	text-align: center;
 	font-weight: 300;
 	font-family: Lato, Arial, sans-serif;
+}
+
+.movies_header{
+	width:100%;
+	height:auto;
+	position: relative;
+	padding-bottom:75px;
 }
 
 .card-intro {
@@ -620,7 +634,7 @@ p2{
 /* END FUN FACTS */
 
 /* MOVIE AND BOOKS CARDS */
-.card {
+/*.card {
 	position: relative;
 	float:left;
 	margin-bottom: 20px;
@@ -680,5 +694,5 @@ p2{
     margin-bottom: 15px;
     margin-top: 15px;
     text-align: justify;
-}
+}*/
  /* END MOVIES AND BOOKS CARDS*/
