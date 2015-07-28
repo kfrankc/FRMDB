@@ -1,4 +1,9 @@
 
+body{
+	width: 100%;
+	height: auto;
+}
+
 /* NAVIGATION BAR */
 #navbar {
 	text-align:center;
@@ -163,15 +168,28 @@ img.Frank{
 	right: 175px; 
 	padding-left: 15px;
 	width: 23%;
+	height: auto;
 }
 
-img.Ruthie{
+#Frank_photo{
+	position: absolute;
+	padding-top: 15px;
+	right: 175px; 
+	padding-left: 15px;
+	width: 23%;
+}
+
+/*
+img.img-responsive{
 	position: absolute;
 	padding-top: 15px;
 	padding-left: 15px;
 	right: 175px; 
 	width: 23%;
+	height: auto;
 }
+*/
+
 
 img.cover_title{
 	padding-top: 200px;
@@ -304,6 +322,7 @@ h2.logo{
 
 
 #Bio_Frank{
+	position: relative;
 	padding-top: 10px;
 	padding-bottom: 15px;
 	padding-left: 10px;
@@ -377,6 +396,7 @@ p2{
 
 	/*background-color: #000000;*/
 }
+
 
 #About2{ /* ABOUT RUTHIE */
 	
