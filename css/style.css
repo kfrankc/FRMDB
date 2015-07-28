@@ -9,7 +9,7 @@ body{
 	text-align:center;
 	position: fixed;
 	width: 100%;
-	height: 60px;
+	height:60px;
 	top: 0;
 	left: 0;
 	z-index: 2;
@@ -72,7 +72,7 @@ body{
 }
 
 #content {
-	margin-top: 90px;
+	margin-top:30px;
 	padding-left: 20px;
 }
 
@@ -84,16 +84,207 @@ body{
 }
 
 #content-credit {
-	position:relative;
+	position: relative;
 	height:22px;
     left:0px;
     right:0px;
     bottom:0px;
 	text-align: center;
-	padding-bottom: 20px;
+	padding-bottom:20px;
 	font-weight: 300;
 	font-family: Lato, Arial, sans-serif;
 }
+
+#spreadsheet_content_credit {
+	clear:both;
+	position:relative;
+	z-index:10;
+	height:22px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+	text-align: center;
+	font-weight: 300;
+	font-family: Lato, Arial, sans-serif;
+}
+
+.movies_header{
+	width:100%;
+	height:auto;
+	position: relative;
+	padding-bottom:75px;
+}
+
+.card-intro {
+	position: relative;
+	float:left;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	min-height: 530px;
+	min-width: 340px;
+	max-height: 530px;
+	max-width: 340px;
+	width: 32%;
+	height: 100%;
+	padding: 15px;
+	background: #bfbfbf;
+	pointer-events: auto;
+}
+
+.card {
+	position: relative;
+	float:left;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	min-height: 530px;
+	min-width: 340px;
+	max-height: 530px;
+	max-width: 340px;
+	width: 32%;
+	height: 100%;
+	padding: 15px;
+	background: #bfbfbf;
+	pointer-events: auto;
+}
+
+
+.card-movie-title {
+	font-family: 'Lobster', cursive;
+	font-size: 30pt;
+	font-weight: thin;
+	margin: 5px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.card-title {
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 25pt;
+	font-weight: thin;
+	margin-left: 15px;
+	margin-bottom: 11px;
+}
+
+#card-movie-img{
+	width: 80px;
+	height: 80px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.card-movie-content{
+	font-family: Lato;
+	font-size: 13pt;
+	font-weight: thin;
+	padding-top: 20px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+}
+
+#card-movie-ranking{
+	height:180px;
+	width: 350px;
+	padding-top: 10px;
+	padding-left: 10px; 
+}
+
+.card-img {
+    position: relative;
+    margin-left: -15px;
+    padding-right: 30px;
+    width: 100%;
+    height: 0;
+    padding-bottom: 60%;
+}
+
+.card-img-embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    padding-left: 30px;
+    z-index: 2;
+}
+
+.card-frank {
+    font-family: Lato;
+    font-size: 15pt;
+    font-weight: thin;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    margin-top: 210px;
+    text-align: justify;
+    float:left;
+    height:61px;
+    width: 80px;
+    background-color: #c5eff7;
+    padding-right: 145px;
+}
+
+.card-ruthie {
+    font-family: Lato;
+    font-size: 15pt;
+    font-weight: thin;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-top: 210px;
+    text-align: justify;
+    float:left;
+    background-color: #e2f7fb;
+    height: 61px;
+    width: 135px;
+    padding-right: 50px;
+    z-index: 1;
+}
+
+.frank-thumb{
+	width:55px;
+	height:60px;
+	border-radius:100%;
+	z-index:3;
+	position:relative;
+	bottom:80px;
+	left:20px;
+	border:5px solid #c5eff7;
+}
+
+.ruthie-thumb{
+	width:60px;
+	height:60px;
+	border-radius:100%;
+	z-index:3;
+	float:right;	
+	position:relative;
+	bottom:80px;
+	right:20px;	
+	border:5px solid #e2f7fb;
+}
+
+#frank-rank{
+    font-family: 'Oswald', sans-serif;
+    font-size: 28pt;
+    text-align: center;
+    font-weight: thin;
+    position:relative;
+    left:80px;
+    top:2px;
+    
+}
+
+#ruthie-rank{
+    font-family: 'Oswald', sans-serif;
+    font-size: 28pt;
+    font-weight: thin;
+    position:relative;
+    left:20px;
+    top:2px;
+}
+
+=======
 /*
 #title{
 	font-family: Lato;
@@ -463,7 +654,7 @@ p2{
 /* END FUN FACTS */
 
 /* MOVIE AND BOOKS CARDS */
-.card {
+/*.card {
 	position: relative;
 	float:left;
 	margin-bottom: 20px;
@@ -523,5 +714,5 @@ p2{
     margin-bottom: 15px;
     margin-top: 15px;
     text-align: justify;
-}
+}*/
  /* END MOVIES AND BOOKS CARDS*/

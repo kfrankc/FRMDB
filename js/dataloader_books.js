@@ -1,5 +1,6 @@
 // JSON data from Google Spreadsheet
-var dataURL = "https://spreadsheets.google.com/feeds/list/1saNvuCOt9_tHNZ8RQDi0z5ZY0N4sivlA1H2f2qmMOHI/od6/public/values?alt=json";
+var dataURL = "https://spreadsheets.google.com/feeds/list/18qUQi2XDE8m_AqbqswJfbgvY1zDNdYAqci1AWwjqwgQ/od6/public/values?alt=json";
+
 
 // takes in JSON object from google sheets and turns into a json formatted
 // this way based on the original google Doc
