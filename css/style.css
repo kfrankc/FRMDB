@@ -25,7 +25,7 @@ body{
     top:0px;
     left:0px;
     right:0px;
-    background:#4D505B url(../images/nav.png) repeat-x center left;
+/*    background:#4D505B url(../images/nav.png) repeat-x center left;*/
 }
 
 /*
@@ -52,7 +52,7 @@ body{
     text-decoration: none;
    /* border:1px solid #ccc;*/
     cursor: pointer;
-    background:transparent url(../images/overlay.png) repeat-x center left;
+/*    background:transparent url(../images/overlay.png) repeat-x center left;*/
     height:45px;
     line-height:16px;
 }
