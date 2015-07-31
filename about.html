@@ -84,41 +84,6 @@
 			background:transparent url(end.png) no-repeat center center;
 		}
     </style>
-        <div id="nav">
-        	 <img src="http://kfrankc.me/wp-content/uploads/2015/06/FRMDB-banner.png" id="FRMDB-logo">
-            <ul>
-                <li><a href = "index.html">HOME</a></li>
-                <li><a href = "movies.html">MOVIES</a></li>
-                <li><a href = "books.html">BOOKS</a></li>
-                <li><a href = "about.html">ABOUT</a></li>
-            </ul>
-        </div>              
-        <script type="text/javascript">
-            $(function() {
-                $(window).scroll(function(){
-					var scrollTop = $(window).scrollTop();
-					if(scrollTop != 0)
-						$('#nav').stop().animate({'opacity':'0.0'},400);
-					else	
-						$('#nav').stop().animate({'opacity':'0.0'},400);
-				});
-				
-				$('#nav').hover(
-					function (e) {
-						var scrollTop = $(window).scrollTop();
-						if(scrollTop != 0){
-							$('#nav').stop().animate({'opacity':'1'},400);
-						}
-					},
-					function (e) {
-						var scrollTop = $(window).scrollTop();
-						if(scrollTop != 0){
-							$('#nav').stop().animate({'opacity':'0.0'},400);
-						}
-					}
-				);
-            });
-        </script>
 
 	
 <div class="About_header">
@@ -336,5 +301,48 @@
                 Page created by <a href="mailto:frankchen1698@gmail.com">Frank Chen</a> &amp; <a href="mailto:ruthjohnson2013@gmail.com">Ruthie Johnson</a>
                 &copy; 2015 FRMDB
     </div>
+<div id="nav">
+        	 <nav class = "navbar navbar-custom navbar-fixed-top">
+        	 	<!--
+        	 	 <a class="navbar-brand page-scroll">
+                    <i class="fa fa-newspaper-o"></i>  <span class="light"> <img src="http://kfrankc.me/wp-content/uploads/2015/06/FRMDB-banner.png" align="center" style="padding-bottom:5px;padding-right:10px;" height="35" width="150"></span> 
+                </a>
+				-->
+            
+		<ul class = "nav nav-pills">
+			<li role = "presentation"><a href = "index.html">HOME</a></li>
+			<li role = "presentation"><a href = "movies.html">MOVIES</a></li>
+			<li role = "presentation"><a href = "books.html">BOOKS</a></li>
+			<li role = "presentation"><a href = "about.html">ABOUT</a></li>
+		</ul>
 
+		</nav>
+		
+        </div>              
+        <script type="text/javascript">
+            $(function() {
+                $(window).scroll(function(){
+					var scrollTop = $(window).scrollTop();
+					if(scrollTop != 0)
+						$('#nav').stop().animate({'opacity':'0.1'},400); /* scrolling */
+					else	
+						$('#nav').stop().animate({'opacity':'1'},400); /* when hover over; beginining at top */
+				});
+				
+				$('#nav').hover(
+					function (e) {
+						var scrollTop = $(window).scrollTop();
+						if(scrollTop != 0){
+							$('#nav').stop().animate({'opacity':'1'},400);
+						}
+					},
+					function (e) {
+						var scrollTop = $(window).scrollTop();
+						if(scrollTop != 0){
+							$('#nav').stop().animate({'opacity':'0.1'},400);
+						}
+					}
+				);
+            });
+        </script>	
 </body>
