@@ -384,3 +384,67 @@ main {
         page-break-after: avoid;
     }
 }
+
+@media only screen and (max-width: 450px) {
+    .hsContent {
+        max-width: 300px;
+        position: relative;
+        left: 50px;
+        padding-top: 600px;
+    }
+
+    h1.logo{
+        margin-left: 0px;
+        font-family: 'Lato', sans-serif;
+        font-size: 600%;
+    }
+
+    #logo{
+    position: relative;
+    color: #ffffff;
+    width:600px;
+    }
+
+    .hsContainer {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+
+    h3.About_FRMDB{
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        padding-top: 10px;  
+        margin-left: 40px;
+        font-size: 185%;
+        color:#6C7A89;
+    }
+
+    #Bio_FRMDB{
+        text-align: justify;
+        padding-top: 15px;
+        padding-bottom: 5px;
+        margin-left: 20px;
+        width:33%;
+    }
+
+    img.Doge{
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 15px;
+        width: 25%;
+    }
+
+    .bcg {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+}
