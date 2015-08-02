@@ -385,7 +385,7 @@ main {
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media screen and (max-width: 450px) {
     .hsContent {
         max-width: 300px;
         position: relative;
