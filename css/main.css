@@ -400,15 +400,15 @@ main {
     }
 
     #logo{
-    position: relative;
-    color: #ffffff;
-    width:600px;
+        position: relative;
+        color: #ffffff;
+        width:600px;
     }
 
     .hsContainer {
         width: 100%;
         height: 100%;
-        overflow: scroll;
+        overflow: hidden;
         position: relative;
     }
 
