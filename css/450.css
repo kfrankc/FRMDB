@@ -21,18 +21,67 @@ body{
 	overflow-x:hidden;
 }
 
+#About1{ /* ABOUT FRANK */
+
+	display: block;
+	margin-left: 10%;
+	margin-top: 50px;	
+	width:60%;
+	height:800px;
+	/*background-color: #000000;*/
+}
+
+#About2{ /* ABOUT RUTHIE */
+	
+	display: block;
+	margin-left: 10%;
+	margin-top: 50px;	
+	width:60%;	
+	height:870px; 
+
+	/*background-color: #000000;*/
+}
+
 #Bio_Frank{
 	position: relative;
 	text-align: justify;
 	padding-right: 0px;
-	width: 270px;
+	width: 290px;
 	top:200px;
 }
 
 #Frank_photo{
 	position: absolute;
 	padding-top: 40px;
-	left:28px;
+	left:30px;
 	width: 60%;
+}
 
+#Bio_Ruthie{
+	position: relative;
+	text-align: justify;
+	padding-right: 0px;
+	width: 290px;
+	top:220px;
+}
+
+#Ruthie_photo{
+	position: absolute;
+	padding-top: 5px;
+	left:45px;
+	width: 60%;
+}
+
+img.Facebook{
+	padding-left: 4px;
+	padding-right: 4px;
+	width: 10%;
+}
+
+img.Doge_banner{
+	width: 100%;
+	height: auto;
+	position: relative; 
+	padding-bottom: 300px;
+	padding-top: 75px;
 }

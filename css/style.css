@@ -359,6 +359,14 @@ img.Frank{
 	width: 23%;
 }
 
+#Ruthie_photo{
+	position: absolute;
+	padding-top: 15px;
+	right: 175px; 
+	padding-left: 15px;
+	width: 23%;
+}
+
 img.cover_title{
 	padding-top: 200px;
 	width: 500px;
@@ -423,7 +431,7 @@ h2.About_header{
 	bottom: 150px;
 	/*padding-left: 75px;*/
 	width:100%;
-		font-family: 'Lato', sans-serif;
+	font-family: 'Lato', sans-serif;
 	/*color: #22313F;*/
 	color:white;
 	font-size: 550%;
