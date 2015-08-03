@@ -16,3 +16,7 @@
 	font-family: Lato, Arial, sans-serif;
 	font-size: 10px;
 }
+
+body{
+	overflow-x:hidden;
+}
