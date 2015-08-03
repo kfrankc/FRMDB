@@ -20,3 +20,19 @@
 body{
 	overflow-x:hidden;
 }
+
+#Bio_Frank{
+	position: relative;
+	text-align: justify;
+	padding-right: 0px;
+	width: 270px;
+	top:200px;
+}
+
+#Frank_photo{
+	position: absolute;
+	padding-top: 40px;
+	left:28px;
+	width: 60%;
+
+}
