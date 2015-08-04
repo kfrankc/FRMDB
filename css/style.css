@@ -342,29 +342,19 @@ img.Doge_footer{
 	padding-top: 75px;	
 }
 
-img.Frank{
-	position: absolute;
-	padding-top: 15px;
-	right: 175px; 
-	padding-left: 15px;
-	width: 23%;
-	height: auto;
-}
-
 #Frank_photo{
 	position: absolute;
 	padding-top: 15px;
-	right: 175px; 
+	right: 80px; 
 	padding-left: 15px;
-	width: 23%;
+	width: 291px;
 }
 
 #Ruthie_photo{
 	position: absolute;
-	padding-top: 15px;
-	right: 175px; 
+	right: 80px; 
 	padding-left: 15px;
-	width: 23%;
+	width: 291px;
 }
 
 img.cover_title{
@@ -390,7 +380,7 @@ img.About_title{
 img.Facebook{
 	padding-left: 4px;
 	padding-right: 4px;
-	width: 4%;
+	width: 34px;
 }
 
 h2.About_header span{
@@ -580,7 +570,7 @@ p2{
 	display: block;
 	margin-left: 10%;
 
-	margin-top: 50px;	
+	margin-top: 100px;	
 	width:60%;
 	padding-bottom: 75px;
 
