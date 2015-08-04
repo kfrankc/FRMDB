@@ -518,7 +518,7 @@ p2.About_Us{
 }
 
 #Bio_FRMDB{
-	text-align: justify;
+	text-align: center;
 	padding-top: 15px;
 	padding-bottom: 5px;
 	margin-left: auto;
@@ -543,6 +543,7 @@ p.caption{
 
 p2.double{
 	line-height: 200%;
+	text-align: center;
 }
 
 p2{
