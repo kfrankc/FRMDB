@@ -339,7 +339,7 @@ img.Doge_footer{
 	width: 100%;
 	height: auto;
 	position: relative; 
-	padding-top: 75px;	
+	padding-top: 35px;	
 }
 
 #Frank_photo{
@@ -503,13 +503,11 @@ h2.logo{
 }
 
 #About_Us{
-	padding-top: 50px;
-	padding-left: 200px;
-	padding-right: 200px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	padding-left: 30%;
+	padding-right: 30%;
 	text-align: center;
-}
-
-p2.About_Us{
 	font-family: 'Lato', sans-serif;
 	padding-top: 20px;
 	color:#6C7A89;
@@ -551,6 +549,14 @@ p2{
 	/*color: #ECECEC;*/
 	color: #707070;
 	font-size: 115%;
+	line-height: 200%;
+}
+
+p3{
+	font-family: 'Lato', sans-serif;
+	/*color: #ECECEC;*/
+	color: #707070;
+	font-size: 140%;
 	line-height: 200%;
 }
 
@@ -620,6 +626,13 @@ p2{
 	 font-family: 'Lato', sans-serif;
 }
 
+.fruthie_doge {
+	padding-top: 30px;
+	display:block;
+	margin-left:auto;
+	margin-right: auto;
+}
+
 
 
 /* ABOUT SECTION/ FUN FACTS */
@@ -629,3 +642,53 @@ p2{
 
 }
 /* END FUN FACTS */
+
+
+/*Instafeed CSS */
+
+#instafeed {
+   /* Prevent vertical gaps */
+   line-height: 0;
+   
+   -webkit-column-count: 5;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    5;
+   -moz-column-gap:      0px;
+   column-count:         5;
+   column-gap:           0px;
+}
+
+#instafeed img {
+  /* Just in case there are inline attributes */
+  width: 15% !important;
+  height: auto !important;
+}
+
+@media (max-width: 1200px) {
+  #photos {
+  -moz-column-count:    4;
+  -webkit-column-count: 4;
+  column-count:         4;
+  }
+}
+@media (max-width: 1000px) {
+  #photos {
+  -moz-column-count:    3;
+  -webkit-column-count: 3;
+  column-count:         3;
+  }
+}
+@media (max-width: 800px) {
+  #photos {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 400px) {
+  #photos {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
