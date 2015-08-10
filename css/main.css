@@ -431,10 +431,9 @@ h3.About_FRMDB{
 
 img.Doge{
     display: block;
-    margin-right: auto;
-    margin-left: auto;
     padding-top: 15px;
-    width: 25%;
+    padding-left: 15px;
+    width: 16%;
 }
 
 .bcg {
@@ -444,6 +443,15 @@ img.Doge{
     background-size: cover;
     height: 100%;
     width: 100%;
+}
+
+/* Slide 2 */
+#slide-2 .bcg {background-image:url('https://frmdb.files.wordpress.com/2015/07/slide2.png')}
+#slide-2 .hsContent {
+    margin-left: -450px;
+    bottom: 200px;
+    top: auto;
+    overflow:scroll;
 }
 
 }
