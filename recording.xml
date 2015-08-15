@@ -1,7 +1,4 @@
-
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Response>
-<Say>Hello World</Say>
-<Play>https://api.twilio.com/Cowbell.mp3</Play>
+    <Say>Hello there, hope you had a nice day; i am in need of help because i am tired.</Say>
 </Response>
- 
