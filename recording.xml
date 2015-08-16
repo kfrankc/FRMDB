@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
-    <Say>Hello there, hope you had a nice day; i am in need of help because i am tired.</Say>
+    <Say voice="alice" language="en-CA">Hello there, this is a test for Frank and Ruthie's hackathon project. Have a nice day! </Say>
 </Response>
