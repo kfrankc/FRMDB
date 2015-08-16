@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
-    <Say voice="alice" language="en-CA">Hello there, this is a test for Frank and Ruthie's hackathon project. Have a nice day! </Say>
+    <Say voice="woman">Hello there, this is a test for Frank and Ruthie's hackathon project. Have a nice day! </Say>
 </Response>
